@@ -1,0 +1,50 @@
+{%extends 'base.html' %}
+{%block title %}addusers{% endblock%}
+{%block content%}
+{{ style_link(links='style_addusers.css') }}
+<body>
+    <div class='content'>
+        <form class="card" method="POST">
+            <div class="input">
+                <label class="input-label" for="readername">Readername</label>
+                <input class="input-field" type="readername" name="readername" id="readername">
+            </div>
+        
+            <div class="input">
+                <label class="input-label" for="readerpassword">Readerpassword</label>
+                <input class="input-field" type="readerpassword" name="readerpassword" id="readerpassword">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="gender">Gender</label>
+                <input class="input-field" type="gender" name="gender" id="gender">
+            </div>
+        
+            <div class="action">
+                <button class="action-button" type="submit">ADD</button>
+            </div>
+        </form>
+    </div>
+    <p style="display: flex; justify-content: center; padding: 5px 10% 0 10%">{{msg}}</p>
+    <h3 style="display: flex; justify-content: center; padding: 40px 10% 15px 10%">Current Users</h3>
+    <div class="infos">
+        <table>
+            <tr>
+                <th>ReaderID</th>
+                <th>Readername</th>
+                <th>Readerpassword</th>
+                <th>Gender</th>
+                <th>RegistratinDate</th>
+            </tr>
+            {% for data in fetch %}
+            <tr>
+                {% for fields in data%}
+                    <th>{{fields}}</th>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</body>
+
+{%endblock%}

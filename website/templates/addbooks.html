@@ -1,0 +1,84 @@
+{%extends 'base.html' %}
+
+{%block title %}addbooks{% endblock%}
+{%block content%}
+{{ style_link(links='style_addbooks.css') }}
+<div class='content'>
+    <form class="card" method="POST">
+        <div class="card_sub">
+            <div class="input">
+                <label class="input-label" for="bookbarcode">BookBarcode</label>
+                <input class="input-field" type="bookbarcode" name="bookbarcode" id="bookbarcode">
+            </div>
+        
+            <div class="input">
+                <label class="input-label" for="press">Press</label>
+                <input class="input-field" type="press" name="press" id="press">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="edition">Edition</label>
+                <input class="input-field" type="edition" name="edition" id="edition">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="genre">Genere</label>
+                <input class="input-field" type="genre" name="genre" id="genre">
+            </div>
+
+
+            <div class="input">
+                <label class="input-label" for="publicationdate">PublicationDate</label>
+                <input class="input-field" type="publicationdate" name="publicationdate" id="publicationdate">
+            </div>
+            
+            <div class="input">
+                <label class="input-label" for="language">Language</label>
+                <input class="input-field" type="language" name="language" id="language">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="author">Author</label>
+                <input class="input-field" type="author" name="author" id="author">
+            </div>
+        </div>
+
+        <div class="input">
+            <textarea class="input-field" type="discription" name="discription" id="discription">Discription</textarea>
+        </div>  
+        <div class="action">
+            <button class="action-button" type="submit">ADD</button>
+        </div>
+    </form>
+</div>
+
+<h3 style="display: flex; justify-content: center; padding: 40px 10% 15px 10%">Current Books</h3>
+<div class="infos">
+    <table>
+        <tr>
+            <th>BookID</th>
+            <th>BookBarcode</th>
+            <th>genre</th>
+            <th>Author</th>
+            <th>Description</th>
+            <th>Press</th>
+            <th>PublicationDate</th>
+            <th>Language</th>
+            <th>Edition</th>
+            <th>NumofLoan</th>
+            <th>Surplus</th>
+            <th>Total</th>
+        </tr>
+        {% for data in fetch %}
+        <tr>
+            {% for fields in data%}
+                {%if loop.index0 != 9%}
+                    <th>{{fields}}</th>
+                {%endif%}
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+
+{%endblock%}

@@ -1,0 +1,56 @@
+{%extends 'base.html'%}
+{%block title %}home{% endblock%}
+{%block content%}
+{{ style_link(links='style_addusers.css') }}
+<body>
+    <div class='content'>
+        <form class="card" method="POST">
+            <div class="input">
+                <label class="input-label" for="bookbarcode">BookBarcode</label>
+                <input class="input-field" name="bookbarcode" id="bookbarcode">
+            </div>
+        
+            <div class="input">
+                <label class="input-label" for="expiredate">ExpireTime</label>
+                <input class="input-field"  type="date" name="expiredate" id="expiredate">
+            </div>
+
+            <div class="input">
+                <label class="input-label" for="operatorid">OperatorID</label>
+                <input class="input-field"  name="operatorid" id="operatorid">
+            </div>
+        
+            <div class="input-checkbox">
+                <label class="input-label-check">Want Renew?</label>
+                <input class="checkbox" value="True" name="renew" type="checkbox">
+            </div>
+
+            <div class="action">
+                <button class="action-button" type="submit">Borrow</button>
+            </div>
+        </form>
+    </div>
+    <p style="display: flex; justify-content: center; padding: 5px 10% 0 10%">{{msg}}</p>
+    <h3 style="display: flex; justify-content: center; padding: 40px 10% 15px 10%">My Borrowed Info</h3>
+    <div class="infos">
+        <table>
+            <tr>
+                <th>BookID</th>
+                <th>BookBarcode</th>
+                <th>startTime</th>
+                <th>expireTime</th>
+                <th>RenewAllowance</th>
+                <th>OperatorID</th>
+                <th>ReaderID</th>
+            </tr>
+            {% for data in fetch %}
+            <tr>
+                {% for fields in data%}
+                    <th>{{fields}}</th>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+</body>
+{%endblock%}

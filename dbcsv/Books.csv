@@ -1,0 +1,51 @@
+﻿BookID,BookBarcode,Press,Edition,GenreName,DatePublication,Language,Description
+1,GHE12384,Red Publisher,3,Fiction,2009-01-01,English,Running earth
+2,HDOW2923,Blue Publisher,4,Religion & Spirituality,2010-02-02,English,Christianity
+3,324HWRDEA,Red Publisher,1,Science & Technology,2011-03-03,English,Electricity
+4,DWO232,Yellow Publisher,1,History,2012-04-15,English,East Asia history
+5,FOWNF54,Red Publisher,2,History,2013-7-18,English,West Asia history
+6,WFF4324,Yellow Publisher,9,Humanities & Social Sciences,2014-11-01,English,Business
+7,FEQR3284,Red Publisher,3,Science & Technology,2015-12-01,English,Physics
+8,KOFEJ7222,Red Publisher,4,Fiction,2016-07-22,Chinese,Mars
+9,657HWWD,White Publisher,3,Religion & Spirituality,2017-11-01,Chinese,Islam
+10,PMNFH82,Black Publisher,1,History,2018-07-22,Chinese,Europe
+11,HH412WD,Yellow Publisher,3,Fiction,2019-11-01,Chinese,Jupiter
+12,BCM4W13,Red Publisher,2,Science & Technology,2020-07-22,Korean,Chemistry
+13,WNFWM41,Red Publisher,2,Humanities & Social Sciences,2009-11-01,Korean,Business
+14,HUIOI01,Red Publisher,2,Mystery,2010-02-02,Korean,Zeus
+15,342WHD2,Blue Publisher,1,Fiction,2011-03-03,Korean,moon
+16,089HWDNQ,White Publisher,1,Romance,2012-12-20,Korean,Romeo
+17,WGQIWD223,Red Publisher,4,Religion & Spirituality,2013-09-14,Japanese,Shinto
+18,HBWDB431,Yellow Publisher,6,Horror,2014-11-16,Japanese,ghost
+19,AD347HD,Red Publisher,7,Science & Technology,2015-12-07,Japanese,biology
+20,JHRS345B,Blue Publisher,4,Mystery,2016-03-03,Japanese,Hera
+21,SS2342BB,Red Publisher,5,Fiction,2008-03-03,German,AI
+22,GKJ943FSZ,Red Publisher,2,Mystery,2009-01-01,German,unsolved
+23,SFGS35898,Black Publisher,1,Humanities & Social Sciences,2010-01-01,German,na
+24,DSSD4363,Yellow Publisher,1,Mystery,2011-09-14,German,unknown
+25,F43U7UHJ,Red Publisher,9,Fiction,2012-03-12,German,robot
+26,56434YDR,Green Publisher,3,Mystery,2013-01-20,German,monkey
+27,53GDR357,Green Publisher,6,Science & Technology,2014-02-15,German,math
+28,AER23LGKJ,Red Publisher,7,History,2015-04-25,German,korean
+29,HYTIK6904,Yellow Publisher,7,History,2008-06-20,French,china
+30,245O2N2,Red Publisher,7,Fiction,2008-10-10,French,riot
+31,2G3B4OLN,Red Publisher,2,Fiction,2008-10-05,French,earth
+32,98FHSDF,Red Publisher,3,Romance,2021-07-15,French,Juliet
+33,JMPQ3424,Blue Publisher,4,Children’s,2021-01-11,French,How to learn
+34,ANBOF098,Red Publisher,4,Children’s,2021-05-16,English,How to eat
+35,8923BRFU,Red Publisher,5,History,2020-11-20,English,USA
+36,ANRDFO3,Black Publisher,1,Children’s,2020-12-20,English,How to sleep
+37,3252BFDS,White Publisher,5,Fiction,2020-10-01,English,galaxy
+38,FDSF893,Red Publisher,3,Parenting & Families,2020-10-27,English,learning
+39,2N3O0VDS,Green Publisher,7,Children’s,2020-11-11,English,How to run
+40,FSN322HN,Yellow Publisher,3,Horror,2008-12-01,English,midnight
+41,SN0B23U5,Red Publisher,2,Religion & Spirituality,2009-09-08,English,jesus
+42,SNMO53222,Red Publisher,2,Biography,2010-09-18,English,George Washington
+43,90325BNJSD,Blue Publisher,4,Horror,2011-06-21,English,werewolf
+44,FSFE73432,Red Publisher,5,Parenting & Families,2012-07-17,English,music
+45,SANOF311,Red Publisher,8,Biography,2013-03-12,Spanish,Franklin
+46,DFSB324R2,White Publisher,2,Fiction,2014-05-20,Spanish,time travel
+47,FH972R4V,Red Publisher,2,Biography,2015-03-16,Spanish,Donald Trump
+48,FSDBF329,Yellow Publisher,1,Romance,2016-02-22,Spanish,Jack
+49,8023BRFD,Yellow Publisher,5,Romance,2017-07-17,Spanish,Rose
+50,8FDSF3N3,Red Publisher,3,Parenting & Families,2018-01-01,Spanish,teaching

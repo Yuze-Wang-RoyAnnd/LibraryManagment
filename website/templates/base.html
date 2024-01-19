@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% macro style_link(links) -%}
+            <link rel="stylesheet" href='{{ url_for("static", filename=links)}} '>
+        {%- endmacro %}
+        <title>{%block title%}Home{%endblock%}</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="nav_link">
+                    {% if user.is_admin() %}
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/addbooks">Add Books</a></li>
+                    <li><a href="/addusers">Add Users</a></li>
+                    <li><a href="/signout">Sign-out</a></li>
+                    {% else %}
+                    <li><a href="/userdash">Dashboard</a></li>
+                    <li><a href="/signout">Sign-out</a></li>
+                    {%endif%}
+                </ul>
+            </nav>
+        </header>
+        {%block content%}
+        {%endblock%}
+    </body>
+</html>

@@ -1,0 +1,51 @@
+{%extends 'base.html' %}
+
+{%block title %}home{% endblock%}
+{%block content%}
+{{ style_link(links='style_addbooks.css') }}
+<h3 style="display: flex; justify-content: center; padding: 40px 10% 15px 10%">Current Lending Status</h3>
+<div class="infos">
+    <table>
+        <tr>
+            <th>BookID</th>
+            <th>BookBarcode</th>
+            <th>startTime</th>
+            <th>expireTime</th>
+            <th>RenewAllowance</th>
+            <th>OperatorID</th>
+            <th>ReaderID</th>
+        </tr>
+        {% for data in fetch %}
+        <tr>
+            {% for fields in data%}
+                <th>{{fields}}</th>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+
+<h3 style="display: flex; justify-content: center; padding: 40px 10% 15px 10%">Catelog</h3>
+<div class="infos">
+    <table>
+        <tr>
+            <th>BookID</th>
+            <th>BookBarcode</th>
+            <th>startTime</th>
+            <th>expireTime</th>
+            <th>RenewAllowance</th>
+            <th>OperatorID</th>
+            <th>ReaderID</th>
+        </tr>
+        {% for data in fetch %}
+        <tr>
+            {% for fields in data%}
+                <th>{{fields}}</th>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+
+
+{%endblock%}
